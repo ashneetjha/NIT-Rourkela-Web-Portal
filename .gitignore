@@ -1,0 +1,15 @@
+node_modules
+.DS_Store
+.env
+.env.*
+!.env.example
+.dist
+build
+dist
+coverage
+pnpm-lock.yaml
+frontend/dist
+backend/dist
+frontend/.vite
+backend/data
+*.log

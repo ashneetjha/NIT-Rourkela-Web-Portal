@@ -1,0 +1,18 @@
+{
+  "name": "msms",
+  "private": true,
+  "version": "0.1.0",
+  "packageManager": "pnpm@9.15.0",
+  "scripts": {
+    "dev": "concurrently -k -n backend,frontend -c cyan,magenta \"pnpm --dir backend dev\" \"pnpm --dir frontend dev\"",
+    "build": "pnpm --dir backend build && pnpm --dir frontend build",
+    "lint": "pnpm --dir backend lint && pnpm --dir frontend lint",
+    "format": "prettier --write .",
+    "seed": "pnpm --dir backend seed"
+  },
+  "devDependencies": {
+    "concurrently": "^9.2.4",
+    "prettier": "^3.9.5",
+    "prettier-plugin-tailwindcss": "^0.6.14"
+  }
+}
